@@ -1,121 +1,119 @@
-#Lists
+# Lists
 """
 1. Lists are used to store multiple items into single variable
 2. Lists are one of the 4 built-in data types in python used to store collection of data
 3. Lists are created using []
 4. List can hold values irrespective of data type
-5. Lists are ordered that means the order of items will not change, new items will be added at the end
+5. Lists are ordered that means the order of items will not change, and changeable means items can be added and removed,new items will be added at the end
 6. Lists are changeable meaning items in the list can be added/removed
 7. List allow duplicates
 """
 
-#1. Create Lists
-list_l = [1,"2",3, 3.7]
+# 1. Create Lists
+list_l = [1, "2", 3, 3.7]
 print(list_l)
 print("=====================================================================")
 
-#2 Access list items
+# 2 Access list items
 
-#Retrieve based on index
+# Retrieve based on index
 print(list_l[1])
 
-#Retrieves Sub-list starting from index 1 included and 3 excluded
+# Retrieves Sub-list starting from index 1 included and 3 excluded
 print(list_l[1:3])
 
-#Retrieves Sub-list starting from index 1 till end of List
+# Retrieves Sub-list starting from index 1 till end of List
 print(list_l[1:])
 
-#Retrieves Sub-list starting from index 0 included and 3 excluded
+# Retrieves Sub-list starting from index 0 included and 3 excluded
 print(list_l[:3])
 
-#Negative Indexing, -1 refers to last item in the list
-print(list_l[-1]) 
+# Negative Indexing, -1 refers to last item in the list
+print(list_l[-1])
 print("=====================================================================")
 
-
-#3. Change List items
+# 3. Change List items
 list_l[1] = 12.5
 print(list_l)
 
-list_l[1:3] = ["11",15.6]
+list_l[1:3] = ["11", 15.6]
 print(list_l)
 
-#Inserts values without replacing any existing values
-list_l.insert(2,"Watermelon")
+# Inserts values without replacing any existing values
+list_l.insert(2, "Watermelon")
 print(list_l)
 print("=====================================================================")
 
-
-#4. Add List items
+# 4. Add List items
 list_l.append("Pineapple")
 print(list_l)
 
-#Add another list to existing list using `extend`, it also allows to add elemets from `tuple`,`set, dictionaries etc`
-list_existing = [1,2,3,4]
-list_new = [5,6,7,8]
+# Add another list to existing list using `extend`, it also allows to add elemets from `tuple`,`set, dictionaries etc`
+list_existing = [1, 2, 3, 4]
+list_new = [5, 6, 7, 8]
 
 list_existing.extend(list_new)
 print(list_existing)
 
 print("=====================================================================")
 
-#5. Remove List items
-list_remove = [5,6,7,8]
+# 5. Remove List items
+list_remove = [5, 6, 7, 8]
 
-#Removes specified item
+# Removes specified item
 list_remove.remove(6)
 print(list_remove)
 
-#Removes value from specified index
+# Removes value from specified index
 list_remove.pop(1)
 print(list_remove)
 
 del list_remove[0]
 print(list_remove)
 
-#List still exist but entries are removed
+# List still exist but entries are removed
 list_remove.clear()
 print(list_remove)
 
-#Deletes entire List
+# Deletes entire List
 del list_remove
 
 print("=====================================================================")
 
-#6. Loop Lists
-list_loop = ["A","B","C"]
+# 6. Loop Lists
+list_loop = ["A", "B", "C"]
 
-#For Loop
+# For Loop
 for l in list_loop:
     print(l)
 
 for l in range(len(list_loop)):
     print(list_loop[l])
 
-#While Loop
+# While Loop
 i = 0
 while i < len(list_loop):
     print(list_loop[i])
     i += 1
 
-#List Comprehension
+# List Comprehension
 [print(x) for x in list_loop]
 
 print("=====================================================================")
 
-#7. Sort Lists
+# 7. Sort Lists
 
-#Sort method will sort list items alphanumerically and ascending by default
+# Sort method will sort list items alphanumerically and ascending by default
 
-list_alpha = ["Apple","Cat","Boy","Dog"]
+list_alpha = ["Apple", "Cat", "Boy", "Dog"]
 list_alpha.sort()
 print(list_alpha)
 
-list_num = [1,5,2,9,4,0]
+list_num = [1, 5, 2, 9, 4, 0]
 list_num.sort()
 print(list_num)
 
-#Sort descending
+# Sort descending
 list_alpha.sort(reverse=True)
 print(list_alpha)
 
@@ -129,12 +127,12 @@ print(list_num)
 
 print("=====================================================================")
 
-#8. Copy Lists
+# 8. Copy Lists
 
-#We cannot cpy a list by simple assigning list_1 = list_2 because any changes in list_1 will also impact list_2
+# We cannot copy a list by simple assigning list_1 = list_2 because any changes in list_1 will also impact list_2
 
-list_1 = [1,2,4,5]
-list_2 = list_1.copy() # We can also use list_2 = list(list_1)
+list_1 = [1, 2, 4, 5]
+list_2 = list_1.copy()  # We can also use list_2 = list(list_1)
 
 list_1.pop(0)
 print(list_1)
@@ -142,17 +140,17 @@ print(list_2)
 
 print("=====================================================================")
 
-#9. Join Lists
+# 9. Join Lists
 
-list_j1 = [1,2,4,5]
-list_j2 = [6,7,9,52]
+list_j1 = [1, 2, 4, 5]
+list_j2 = [6, 7, 9, 52]
 
-list_join = list_j1 + list_j2 #We can also use `extend` keyword
+list_join = list_j1 + list_j2  # We can also use `extend` keyword
 print(list_join)
 
 print("=====================================================================")
 
-#10. List Methods
+# 10. List Methods
 """
 append()	Adds an element at the end of the list
 clear()	    Removes all the elements from the list
