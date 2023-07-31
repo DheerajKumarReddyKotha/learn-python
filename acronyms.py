@@ -10,11 +10,12 @@ def find_acronym():
     if not found:
         print("Accronym does not exist")
 
+
 def add_acronym():
     acronym = input("What is the acronym you want to add? \n")
     definition = input("what is the definition?\n")
-    with open("acronym.txt","a") as file: #`w` mode overrides the file, `a` adds to end of file
-        file.write(acronym+":"+definition+"\n")
+    with open("acronym.txt", "a") as file:  # `w` mode overrides the file, `a` adds to end of file
+        file.write(acronym + ":" + definition + "\n")
 
 
 def main():
@@ -23,5 +24,6 @@ def main():
         find_acronym()
     elif choice == "A":
         add_acronym()
+
 
 main()

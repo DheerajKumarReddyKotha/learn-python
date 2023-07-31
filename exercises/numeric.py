@@ -1,19 +1,19 @@
-#Integer
+# Integer
 num_i = 1
-print(num_i,":",type(num_i))
+print(num_i, ":", type(num_i))
 
-#Float
+# Float
 num_f = 1.2
-print(num_f,":",type(num_f))
+print(num_f, ":", type(num_f))
 
-#Complex
+# Complex
 num_c = 1j
-print(num_c,":",type(num_c))
+print(num_c, ":", type(num_c))
 
-#Float to Integer
-num_f_i = (int) (1.2)
+# Float to Integer
+num_f_i = (int)(1.2)
 print(num_f_i)
 
-#Integer to Float
-num_i_f = (float) (1)
+# Integer to Float
+num_i_f = (float)(1)
 print(num_i_f)

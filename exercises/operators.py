@@ -10,7 +10,7 @@
     g) Bitwise operators
 """
 
-#Arithmetic Operators include 
+# Arithmetic Operators include
 """
 +  -> Addition
 -  -> Subtraction
@@ -31,7 +31,7 @@ print(12 ** 2)
 print(12 // 10)
 
 print("=====================================================================")
-#Assignment Operators include
+# Assignment Operators include
 
 x = 2
 print(x)
@@ -59,7 +59,7 @@ print(x)
 
 print("=====================================================================")
 
-#Comparision Operators
+# Comparision Operators
 """
 == -> Equals
 != -> Not Equals
@@ -78,14 +78,14 @@ print(1 <= 5)
 
 print("=====================================================================")
 
-#Logical Operators (`and`, `or`, `not`)
-print(5>0 and 1<8)
-print(5>9 or 2<1)
+# Logical Operators (`and`, `or`, `not`)
+print(5 > 0 and 1 < 8)
+print(5 > 9 or 2 < 1)
 print(not 5 > 2)
 print("=====================================================================")
 
-#Identity Operators(`is`, `is not`)
-#These are used to compare objects and check whether they are same with same memory location
+# Identity Operators(`is`, `is not`)
+# These are used to compare objects and check whether they are same with same memory location
 
 x = 5
 y = 5
@@ -96,18 +96,18 @@ b = 4
 print(a is not b)
 print("=====================================================================")
 
-#Membership Operators (`in`,`not in`)
-#It is used to test if a sequence is presented in an object
+# Membership Operators (`in`,`not in`)
+# It is used to test if a sequence is presented in an object
 
 x = 5
-y = [1,5,10]
+y = [1, 5, 10]
 z = 12
 
 print(x in y)
 print(z not in y)
 print("=====================================================================")
 
-#Bitwise operators (&,|, ^, ~, <<, >>)
+# Bitwise operators (&,|, ^, ~, <<, >>)
 """
 &  -> Sets each bit to 1 if both bits are 1
 |  -> Sets each bit to 1 if one of two bits is 1
